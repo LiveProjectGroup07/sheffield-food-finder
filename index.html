@@ -11,7 +11,7 @@ try {
   if(!token){status.textContent='Please paste your Cesium ion access token first.';return;}
   const btn=document.getElementById('enable3d');btn.disabled=true;status.textContent='Loading 3D buildings…';
   try{
-   Cesium.Ion.defaultAccessToken=token;
+   Cesium.Ion.defaultAccessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6InFRMlRPcG05T1pNclhPUEsiLCJqdGkiOiI3ZjdhNmJjZS1mZGVkLTRmNjItYTA1ZC0wY2U0NjZjNmM0ZjAiLCJpZCI6NTE4NTcwLCJzdWIiOiJkdXlndWthcmFvZ2x1IiwiaXNzIjoiaHR0cHM6Ly9hcGkuY2VzaXVtLmNvbSIsImF1ZCI6IlNoZWZmaWVsZCBGb29kIEZpbmRlciIsImlhdCI6MTc5MjQzMjg4OX0.M89yqlu6FenqDpxJFdTgjiqJBh0FmrKjS6GMYU9lmHo;
    if(!googleTileset){googleTileset=await Cesium.createGooglePhotorealistic3DTileset();viewer.scene.primitives.add(googleTileset);}
    googleTileset.show=true;
    viewer.scene.globe.show=false;
