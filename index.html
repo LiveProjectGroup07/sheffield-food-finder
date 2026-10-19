@@ -16,7 +16,7 @@ try {
   btn.disabled=true;
   status.textContent='Loading Google 3D buildings…';
   try{
-   Cesium.Ion.defaultAccessToken=DEMO_TOKEN;
+   Cesium.Ion.defaultAccessToken=''eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6InFRMlRPcG05T1pNclhPUEsiLCJqdGkiOiI3ZjdhNmJjZS1mZGVkLTRmNjItYTA1ZC0wY2U0NjZjNmM0ZjAiLCJpZCI6NTE4NTcwLCJzdWIiOiJkdXlndWthcmFvZ2x1IiwiaXNzIjoiaHR0cHM6Ly9hcGkuY2VzaXVtLmNvbSIsImF1ZCI6IlNoZWZmaWVsZCBGb29kIEZpbmRlciIsImlhdCI6MTc5MjQzMjg4OX0.M89yqlu6FenqDpxJFdTgjiqJBh0FmrKjS6GMYU9lmHo'';
    if(!googleTileset){
     const tiles=await Cesium.createGooglePhotorealistic3DTileset();
     viewer.scene.primitives.add(tiles);
