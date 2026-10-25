@@ -5,7 +5,7 @@ try {
  const viewer=new Cesium.Viewer('cesiumContainer',{baseLayer:new Cesium.ImageryLayer(new Cesium.OpenStreetMapImageryProvider({url:'https://tile.openstreetmap.org/'})),terrainProvider:new Cesium.EllipsoidTerrainProvider(),geocoder:false,homeButton:false,sceneModePicker:true,baseLayerPicker:false,animation:false,timeline:false,navigationHelpButton:false,infoBox:true,selectionIndicator:true});
  viewer.scene.globe.depthTestAgainstTerrain=false;
  let googleTileset=null;
- const DEMO_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6InFRMlRPcG05T1pNclhPUEsiLCJqdGkiOiI3ZjdhNmJjZS1mZGVkLTRmNjItYTA1ZC0wY2U0NjZjNmM0ZjAiLCJpZCI6NTE4NTcwLCJzdWIiOiJkdXlndWthcmFvZ2x1IiwiaXNzIjoiaHR0cHM6Ly9hcGkuY2VzaXVtLmNvbSIsImF1ZCI6IlNoZWZmaWVsZCBGb29kIEZpbmRlciIsImlhdCI6MTc5MjQzMjg4OX0.M89yqlu6FenqDpxJFdTgjiqJBh0FmrKjS6GMYU9lmHo";
+ const DEMO_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6Ijh1YzNsR3hkVC1ibVpxQW8iLCJqdGkiOiI3ZjdhNmJjZS1mZGVkLTRmNjItYTA1ZC0wY2U0NjZjNmM0ZjAiLCJpZCI6NTE4NTcwLCJzdWIiOiJkdXlndWthcmFvZ2x1IiwiaXNzIjoiaHR0cHM6Ly9hcGkuY2VzaXVtLmNvbSIsImF1ZCI6IlNoZWZmaWVsZCBGb29kIEZpbmRlciIsImlhdCI6MTc5Mjk0NzEyNH0.XkWa2YVz6J2wkUVu_x0QXMwn2MClpulqERo3sdaFId0";
  async function loadGoogle3D(){
   const status=document.getElementById('status3d');
   const btn=document.getElementById('enable3d');
